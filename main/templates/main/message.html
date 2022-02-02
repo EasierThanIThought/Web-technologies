@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Обратная связь
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<style>
+.container {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn{
+    background-color: #23afa6 !important;
+}
+</style>
+<div class="container">
+
+  <img src="{% static "../../static/messs.jpg"%}" alt="Nature" style="width:100%;">
+  <div class="text-block">
+    <br><h4>Оставьте отзыв о сайте</h4><br>
+      <form method="post">
+          {% csrf_token %}
+          {{ form.name }}<br>
+          {{ form.feedback }}<br>
+          <button type="submit" class="btn btn-success">Отправить</button>
+          <span>{{ error }}</span>
+      </form>
+  </div>
+</div>
+{% endblock %}

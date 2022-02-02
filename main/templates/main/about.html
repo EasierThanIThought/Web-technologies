@@ -1,0 +1,68 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    О разработке
+{% endblock %}
+
+{% block content %}
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+figcaption {
+    text-align: center; /* Выравниваем по центру */
+   }
+</style>
+<body>
+{% load static %}
+<div class="header">
+  <h1>Примеры страниц проекта</h1>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="{% static "../../static/base.jpg"%}" style="width:100%">
+      <figcaption>base.html</figcaption>
+     <img src="{% static "../../static/message.jpg"%}" style="width:100%">
+      <figcaption>message.html</figcaption>
+    <img src="{% static "../../static/forms.jpg"%}" style="width:100%">
+      <figcaption>forms.py</figcaption>
+    <img src="{% static "../../static/models.jpg"%}" style="width:100%">
+      <figcaption>models.py</figcaption><img src="{% static "../../static/views.jpg"%}" style="width:100%">
+      <figcaption>views.py</figcaption>
+
+
+  </div>
+  <div class="column">
+    <img src="{% static "../../static/index.jpg"%}" style="width:100%">
+      <figcaption>index.html</figcaption>
+    <img src="{% static "../../static/about.jpg"%}" style="width:100%">
+      <figcaption>about.html</figcaption>
+
+    <img src="{% static "../../static/urls.jpg"%}" style="width:100%">
+      <figcaption>urls.py</figcaption>
+  </div>
+</div>
+
+</body>
+{% endblock %}
