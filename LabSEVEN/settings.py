@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'LabSEVEN.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd52ttcodhfonmv',
+        'USER': 'avhrfdbclhtkko',
+        'PASSWORD': '78bad642e0c089eb4ae86af2b2a5b9700140a4c8e58495d74bd4bcd43658f6b2',
+        'HOST': 'ec2-34-242-84-130.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
