@@ -13,5 +13,17 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="d52ttcodhfonmv@ec2-34-242-84-130.eu-west-1.compute.amazonaws.com" uuid="b685fb4b-91ce-45e0-b30c-ab26db5f8675">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>avhrfdbclhtkko</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="d52ttcodhfonmv@ec2-34-242-84-130.eu-west-1.compute.amazonaws.com [2]" uuid="8703aa93-7985-4b8e-82e0-4a2bc9fa44f7">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>avhrfdbclhtkko</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>
