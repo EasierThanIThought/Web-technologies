@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content="web project">
+    <meta name="keywords" content="clinic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+   <style>
+        /*База, стили для шапки, кнопок*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        a {
+            color: #888888;
+            text-decoration: none;
+            transition: all.6s ease;
+            -moz-transition: all.6s ease;
+            -o-transition: all.6s ease;
+            -webkit-transition: all.6s ease;
+        }
+        a:hover {
+            color: #333333;
+            text-decoration: none;
+            transition: all.6s ease;
+            -moz-transition: all.6s ease;
+            -o-transition: all.6s ease;
+            -webkit-transition: all.6s ease;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+            transition: all.3s ease;
+            -moz-transition: all.3s ease;
+            -o-transition: all.3s ease;
+            -webkit-transition: all.3s ease;
+        }
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+        header {
+            float: left;
+            background-color: #0C0D3D;
+            width: 99.4%;
+            padding: 0.3%;
+            border-bottom: 5px solid white;
+        }
+        header>div#logo>a>img {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-left: 15%;
+        }
+        header>div#logo>a {
+            color: white;
+        }
+        header>div#logo>a>span {
+            color: white;
+            font-size: 2.5em;
+            margin-left: 10px;
+        }
+
+        /*Modify*/
+        @media (min-width: 950px){
+            header>div#logo>a>img {
+            margin-left: 15%;
+            }
+            #logo {
+            float: left;
+            width: 30%;
+            }
+            #about {
+                float: left;
+                width: 37%;
+            }
+            #reg_auth {
+            float: right;
+            width: 30%;
+            }
+        }
+
+        @media (max-width: 949px) and (min-width: 525px) {
+            header>div#logo>a>img {
+            margin-left: 15%;
+            }
+            #logo {
+            float: left;
+            width: 50%;
+            }
+            #about {
+                visibility: hidden;
+                display: none;
+            }
+            #reg_auth {
+            float: right;
+            width: 50%;
+            }
+        }
+
+        @media (max-width: 524px) {
+            header>div#logo>a>img {
+            margin-left: 5%;
+            }
+            #logo {
+            float: left;
+            width: 50%;
+            }
+            #about {
+                visibility: hidden;
+                display: none;
+            }
+            #reg_auth {
+            float: right;
+            width: 50%;
+            }
+        }
+
+        /*добавление элементов по центру шапки*/
+        #about {
+            text-align: center;
+            font-size: 1.4em;
+            padding-top: 10px;
+        }
+        #about>a {
+            color: white;
+        }
+        #about>a:hover {
+            color: white;
+            border-bottom: 1px solid silver;
+        }
+        #about>a:last-child {
+            margin-left: 10%;
+        }
+        #reg_auth>a {
+            color: white;
+        }
+        .btn {
+            float: right;
+            margin-right: 3%;
+            margin-top: 7px;
+            border-radius: 5px;
+            padding: 5px 9px;
+            font-size: 1.2em;
+            background-color: #178FFF;
+            text-shadow: #0C0D3D 0 0 2px;
+            color:white;
+        }
+        .btn:hover {
+            margin-top: 9px;
+        }
+        .btn:active {
+            border-bottom: 0;
+            margin-top: 11px;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <div id="logo">
+        <a href="#" title="Main">
+            <img src="static/logo.png" title="Clinic" alt="clinic">
+            <span>Clinic</span>
+        </a>
+    </div>
+        {% block headcontent %}{% endblock %}
+</header>
+{% block content %}{% endblock %}
+</body>
+</html>

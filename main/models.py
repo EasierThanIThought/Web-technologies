@@ -18,6 +18,7 @@ class User(models.Model):
     def __str__(self):
         return self.login
 
+
 class Hospital(models.Model):
     id = models.AutoField(primary_key=True)
     address = models.CharField(max_length=255, verbose_name=u"address")
@@ -70,7 +71,6 @@ class Patient(models.Model):
         return self.name
 
 
-
 class Appointment(models.Model):
     id = models.AutoField(primary_key=True)
     patient_id = models.ForeignKey(Patient, on_delete=models.CASCADE)
@@ -79,7 +79,6 @@ class Appointment(models.Model):
 
     def __str__(self):
         return self.id
-
 
 
 class Vacation(models.Model):

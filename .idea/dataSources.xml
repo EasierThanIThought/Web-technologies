@@ -20,14 +20,28 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-34-242-84-130.eu-west-1.compute.amazonaws.com:5432/ d52ttcodhfonmv</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="d52ttcodhfonmv@ec2-34-242-84-130.eu-west-1.compute.amazonaws.com [2]" uuid="8703aa93-7985-4b8e-82e0-4a2bc9fa44f7">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-34-242-84-130.eu-west-1.compute.amazonaws.com:5432/d52ttcodhfonmv</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="afefe8e0-1c11-47cc-beca-33fb0747ccc2">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/LabSEVEN/settings.py</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-34-242-84-130.eu-west-1.compute.amazonaws.com:5432/d52ttcodhfonmv</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Django Hospital" uuid="f18cf68c-70d0-42b3-9c35-74d4333d9de8">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/LabSEVEN/settings.py</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-34-242-84-130.eu-west-1.compute.amazonaws.com:5432/d52ttcodhfonmv</jdbc-url>
     </data-source>
   </component>
 </project>

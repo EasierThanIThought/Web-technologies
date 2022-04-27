@@ -1,5 +1,6 @@
 from .models import Feedback
 from django.forms import ModelForm, TextInput, Textarea
+from django.contrib.auth.models import User
 
 
 class FeedBackForm(ModelForm):
@@ -16,3 +17,4 @@ class FeedBackForm(ModelForm):
             'placeholder': 'Отзыв...'
             }),
         }
+
