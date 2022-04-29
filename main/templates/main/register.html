@@ -1,6 +1,6 @@
 {% extends 'main/styles.html' %}
 {% block title %}
-    Register
+    Clinic
 {% endblock %}
 
 {% block headcontent %}
@@ -82,7 +82,6 @@
             color: white;
         }
         .btn {
-            font-family: "Times New Roman", sans-serif !important;
             float: right;
             margin-right: 3%;
             margin-top: 7px;
@@ -109,6 +108,7 @@
             margin-left: 5%;
         }
         .heading {
+            cursor: default;
             font-weight: lighter;
             font-size: 1.4em;
             border-bottom: 2px solid #178FFF;
@@ -145,29 +145,21 @@
             text-align: center;
             color: black;
         }
-        .text-block {
-            background-color: white;
-            color: black;
-            padding-left: 20px;
-            padding-right: 20px;
+        input {
+            font-size: 1.2em;
+            line-height: 1.2em;
+            border: 2px solid silver;
+            border-radius: 5px;
         }
-        .text-block>span {
-            font-size: 1.3em;
-            width: 80%;
+        .register-form-container {
+            max-width: 450px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .form-field {
             margin: 7px 10%;
-            float: left;
-            text-align: center;
-            color: black;
         }
-        .text-block>span {
-            font-size: 1.3em;
-            width: 80%;
-            margin: 7px 10%;
-            float: left;
-            text-align: center;
-            color: black;
-        }
-        .text-block>form>button {
+        .button {
             float: right;
             margin-right: 3%;
             margin-top: 7px;
@@ -177,17 +169,23 @@
             background-color: #178FFF;
             text-shadow: #0C0D3D 0 0 2px;
             color:white;
+            overflow: hidden;
 
         }
-        .text-block>form>button:hover {
-            margin-top: 9px;
+        .button:hover {
+            background-color: white;
+            color: #178FFF;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: pointer;
         }
-        .text-block>form>button:active {
-            border-bottom: 0;
-            margin-top: 11px;
+        .button:active {
+            background-color: #178FFF;
+            color: white;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: wait;
         }
-
-
 
     </style>
 
@@ -197,11 +195,6 @@
                 Log in
             </div>
         </a>
-        <a href="" title="Sign up">
-            <div class="btn">
-                Sign up
-            </div>
-        </a>
     </div>
 {% endblock %}
 
@@ -209,19 +202,35 @@
 {% load static %}
 <div id="main">
     <div id="news">
+        <h2 class="heading">Register</h2>
+        <div style="clear:both">
+            <br>
+        </div>
         <div class="article">
-            <div class="text-block">
-                <br><span>Оставьте отзыв о сайте</span><br>
-                <form method="post">
-                    {% csrf_token %}
-                    {{ form.name }}<br>
-                    {{ form.feedback }}<br>
-                    <button type="submit" class="btn btn-success">Send</button>
-                    <br>
-                    <span>{{ error }}</span>
-                    <br>
-                </form>
+            <div class="register-form-container">
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Surname">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Passport">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Login">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" placeholder="Repeat Login">
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button">Register</button>
+                </div>
             </div>
+            <span>our project our project our project our project our project our project our project our project</span>
+            <span>our project our project our project our project</span>
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import FeedBackForm
+from .forms import *
 from django.http import HttpResponse
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
@@ -53,7 +53,7 @@ def home(request):
 def register(request):
     error = ''
     if request.method == "POST":
-        form = FeedBackForm(request.POST)
+        form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('Clinic')
