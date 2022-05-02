@@ -206,29 +206,34 @@
         <div style="clear:both">
             <br>
         </div>
-        <div class="article">
-            <div class="register-form-container">
-                <div class="form-fields">
-                    <div class="form-field">
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="form-field">
-                        <input type="text" placeholder="Surname">
-                    </div>
-                    <div class="form-field">
-                        <input type="text" placeholder="Passport">
-                    </div>
-                    <div class="form-field">
-                        <input type="text" placeholder="Login">
-                    </div>
-                    <div class="form-field">
-                        <input type="text" placeholder="Repeat Login">
-                    </div>
-                </div>
-                <div class="form-buttons">
-                    <button class="button">Register</button>
-                </div>
-            </div>
+        <form method="post">
+            {%  csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+{#        <div class="article">#}
+{#            <div class="register-form-container">#}
+{#                <div class="form-fields">#}
+{#                    <div class="form-field">#}
+{#                        <input type="text" placeholder="Name">#}
+{#                    </div>#}
+{#                    <div class="form-field">#}
+{#                        <input type="text" placeholder="Surname">#}
+{#                    </div>#}
+{#                    <div class="form-field">#}
+{#                        <input type="text" placeholder="Passport">#}
+{#                    </div>#}
+{#                    <div class="form-field">#}
+{#                        <input type="text" placeholder="Login">#}
+{#                    </div>#}
+{#                    <div class="form-field">#}
+{#                        <input type="text" placeholder="Repeat Login">#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="form-buttons">#}
+{#                    <button class="button">Register</button>#}
+{#                </div>#}
+{#            </div>#}
             <span>our project our project our project our project our project our project our project our project</span>
             <span>our project our project our project our project</span>
         </div>
