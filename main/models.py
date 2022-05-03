@@ -1,14 +1,15 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
-class User(models.Model):
-    #id = models.AutoField(primary_key=True)
-    login = models.CharField(max_length=255, verbose_name=u"login")
-    password = models.CharField(max_length=255, verbose_name=u"password")
-    is_staff = models.BooleanField(default=0)
-
-    def __str__(self):
-        return self.login
+# class User(models.Model):
+#     #id = models.AutoField(primary_key=True)
+#     login = models.CharField(max_length=255, verbose_name=u"login")
+#     password = models.CharField(max_length=255, verbose_name=u"password")
+#     is_staff = models.BooleanField(default=0)
+#
+#     def __str__(self):
+#         return self.login
 
 
 class Hospital(models.Model):
@@ -46,13 +47,19 @@ class Doctor(models.Model):
 class Patient(models.Model):
     #id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, verbose_name=u"name")
+    surname = models.CharField(max_length=255, verbose_name=u"surname")
     passport = models.CharField(max_length=255, verbose_name=u"passport")
     phone_number = models.CharField(max_length=255, verbose_name=u"mobile", null=True, blank=True)
     birth = models.DateField(max_length=255, verbose_name=u"bithday")
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_id = models.OneToOneField(User, on_delete = models.CASCADE, primary_key = True)
 
     def __str__(self):
         return self.name
+
+    # def getbyuserid(id):
+    #     return self.name
+
+
 
 class MedicalCard(models.Model):
     #id = models.AutoField(primary_key=True)

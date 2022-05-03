@@ -176,11 +176,22 @@
 
     </style>
     <div id="reg_auth">
-        <a href="/clinic" title="Log out">
-            <div class="btn">
+        {% if request.user.is_authenticated %}
+            <li class="last"> {{user.username}} | <a href="{% url 'logout' %}"><div class="btn">
                 Log out
-            </div>
-        </a>
+            </div></a></li>
+        {% else %}
+            <a href="/authorization" title="Log in">
+                <div class="btn">
+                    Log in
+                </div>
+            </a>
+            <a href="/register" title="Sign up">
+                <div class="btn">
+                    Sign up
+                </div>
+            </a>
+        {% endif %}
     </div>
 {% endblock %}
 {% block content %}
@@ -192,7 +203,7 @@
         </div>
         <div class="article">
             <img src="static/profile.png" alt="LOGO" title="LOGO">
-            <span>NAME SURNAME</span>
+            <span>NAME SURNAME {{ user.patient.name }}</span>
             <span>ID/PESEL</span>
             <p>passport</p>
             <p>phone number</p>
@@ -217,7 +228,7 @@
 <aside>
     <div id="courses">
         <div class="article">
-            <br><a href="" title="registration">Registration for an appointment<br></a><br>
+            <br><a href="/userinfo" title="registration">Add info<br></a><br>
         </div>
     </div>
     <div id="courses">

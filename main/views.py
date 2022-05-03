@@ -1,12 +1,12 @@
-from django.contrib.auth.models import User, auth
-from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth import logout, login
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.views import LoginView
 from django.core.paginator import Paginator
 from django.http import HttpResponse, HttpResponseNotFound, Http404
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .forms import *
 from .models import *
@@ -41,8 +41,8 @@ def registration(request):
     return render(request, "main/registration.html")
 
 
-def authorization(request):
-    return render(request, "main/authorization.html")
+# def authorization(request):
+#     return render(request, "main/authorization.html")
 
 
 def personpage(request):
@@ -73,10 +73,25 @@ def home(request):
 #     }
 #     return render(request, "main/register.html", context)
 
+class UserInfo(CreateView):
+    form_class = UserInfoForm()
+    template_name = 'main/userinfo.html'
+    success_url = reverse_lazy("Personpage")
+
+    def get_user_context(self, **kwargs):
+        context = kwargs
+        return context
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title="Save")
+        return dict(list(context.items()) + list(c_def.items()))
+
+
 class RegisterUser(CreateView):
     form_class = RegisterUserForm
     template_name = 'main/register.html'
-    success_url = reverse_lazy('about')
+    success_url = reverse_lazy("Homepage")
 
     def get_user_context(self, **kwargs):
         context = kwargs
@@ -86,4 +101,31 @@ class RegisterUser(CreateView):
         context = super().get_context_data(**kwargs)
         c_def = self.get_user_context(title="Sign up")
         return dict(list(context.items()) + list(c_def.items()))
+
+    def form_valid(self, form):
+        user = form.save()
+        login(self.request, user)
+        return redirect("Homepage")
+
+class LoginUser(LoginView):
+    form_class = LoginUserForm
+    template_name = 'main/authorization.html'
+
+    def get_user_context(self, **kwargs):
+        context = kwargs
+        return context
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title="Sign in")
+        return dict(list(context.items()) + list(c_def.items()))
+
+    def get_success_url(self):
+        return reverse_lazy("Personpage")
+
+
+def logout_user(request):
+    logout(request)
+    return redirect("Authorization")
+
 

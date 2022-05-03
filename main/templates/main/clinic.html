@@ -149,16 +149,23 @@
     </style>
 
     <div id="reg_auth">
-        <a href="/personpage" title="Log in">
-            <div class="btn">
-                Log in
-            </div>
-        </a>
-        <a href="/register" title="Sign up">
-            <div class="btn">
-                Sign up
-            </div>
-        </a>
+        {% if request.user.is_authenticated %}
+            <li class="last"> {{user.username}} | <a href="{% url 'logout' %}"><div class="btn">
+                Log out
+            </div></a></li>
+        {% else %}
+            <a href="/authorization" title="Log in">
+                <div class="btn">
+                    Log in
+                </div>
+            </a>
+            <a href="/register" title="Sign up">
+                <div class="btn">
+                    Sign up
+                </div>
+            </a>
+        {% endif %}
+
     </div>
 {% endblock %}
 
