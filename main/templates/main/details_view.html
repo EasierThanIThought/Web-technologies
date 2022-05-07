@@ -1,0 +1,240 @@
+{% extends 'main/styles.html' %}
+{% block title %}
+    hui
+{% endblock %}
+
+{% block headcontent %}
+    {% load static %}
+    <style>
+        /*База, стили для шапки, кнопок*/
+        /*Modify*/
+        @media (min-width: 950px){
+            header>div#logo>a>img {
+                margin-left: 15%;
+            }
+            #logo {
+                float: left;
+                width: 30%;
+            }
+            #about {
+                float: left;
+                width: 37%;
+            }
+            #reg_auth {
+                float: right;
+                width: 30%;
+            }
+        }
+
+        @media (max-width: 949px) and (min-width: 525px) {
+            header>div#logo>a>img {
+                margin-left: 15%;
+            }
+            #logo {
+                float: left;
+                width: 50%;
+            }
+            #about {
+                visibility: hidden;
+                display: none;
+            }
+            #reg_auth {
+                float: right;
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 524px) {
+            header>div#logo>a>img {
+                margin-left: 5%;
+            }
+            #logo {
+                float: left;
+                width: 50%;
+            }
+            #about {
+                visibility: hidden;
+                display: none;
+            }
+            #reg_auth {
+                float: right;
+                width: 50%;
+            }
+        }
+
+        #about {
+            text-align: center;
+            font-size: 1.4em;
+            padding-top: 10px;
+        }
+        #about>a {
+            color: white;
+        }
+        #about>a:hover {
+            color: white;
+            border-bottom: 1px solid silver;
+        }
+        #about>a:last-child {
+            margin-left: 10%;
+        }
+        #reg_auth>a {
+            color: white;
+        }
+        .btn {
+            float: right;
+            margin-right: 3%;
+            margin-top: 7px;
+            border-radius: 5px;
+            padding: 5px 9px;
+            font-size: 1.2em;
+            background-color: #178FFF;
+            text-shadow: #0C0D3D 0 0 2px;
+            color:white;
+        }
+        .btn:hover {
+            margin-top: 9px;
+        }
+        .btn:active {
+            border-bottom: 0;
+            margin-top: 11px;
+        }
+
+        /*Стиль основного контента*/
+        #main {
+            width: 40%;
+            float: left;
+            margin-top: 20px;
+            margin-left: 4%;
+        }
+        aside {
+            width: 50%;
+            float: left;
+            margin-top: 20px;
+            margin-left: 2%;
+        }
+        .heading {
+            font-weight: lighter;
+            font-size: 1.4em;
+            border-bottom: 2px solid #178FFF;
+            float: left;
+            color: #0C0D3D;
+            padding: 0px 5px;
+        }
+        .heading:first-letter {
+            color: #178FFF;
+        }
+
+        .article {
+            width: 100%; /*или 40 если несколько на странице?*/
+            float: left;
+            margin-right: 10%;
+            margin-bottom: 20px;
+            border: 1px solid #178FFF;
+            background-color: white;
+            box-sizing: border-box;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .article>img {
+            width: 60%;
+            height: 60%;
+            border: 1px solid black;
+            display: block;
+            margin-top: 6px;
+            margin-left: 19%;
+
+        }
+        .article>span {
+            font-size: 1.3em;
+            width: 80%;
+            margin: 10%;
+            float: left;
+            text-align: center;
+            color: black;
+        }
+        .article>p {
+            font-size: 1.1em;
+            width: 80%;
+            margin: 6px;
+            text-align: left;
+            color: black;
+        }
+        .article>a {
+            font-size: 1em;
+            width: 80%;
+            margin: 6px;
+            text-align: left;
+            color: #178FFF;
+        }
+        .article>a:hover {
+            font-size: 1em;
+            width: 80%;
+            margin: 6px;
+            text-align: left;
+            color: #0C0D3D;
+        }
+
+    </style>
+    <div id="reg_auth">
+        {% if request.user.is_authenticated %}
+            <li class="last"> {{user.username}} | <a href="{% url 'logout' %}"><div class="btn">
+                Log out
+            </div></a></li>
+        {% else %}
+            <a href="/authorization" title="Log in">
+                <div class="btn">
+                    Log in
+                </div>
+            </a>
+            <a href="/register" title="Sign up">
+                <div class="btn">
+                    Sign up
+                </div>
+            </a>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block content %}
+    {% load static %}
+    <div id="main">
+        <div id="news">
+            <div style="clear:both">
+                <br>
+            </div>
+            <div class="article">
+                <img src="static/profile.png" alt="LOGO" title="LOGO">
+                <span>привет челядь {{ patient.name }} {{ patient.surname }}</span>
+                <span>ID/PESEL</span>
+                <p>passport</p>
+                <p>phone number</p>
+                <p>mail</p>
+                <br>
+                <a href="" title="edit">Edit</a>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div id="courses">
+            <div style="clear:both">
+                <br>
+            </div>
+            <div class="article">
+                <span>CURRENT</span>
+                <p>Doctor's first and last name</p>
+                <p>Date an time</p>
+            </div>
+        </div>
+    </aside>
+    <aside>
+        <div id="courses">
+            <div class="article">
+                <br><a href="/userinfo" title="registration">Add info<br></a><br>
+            </div>
+        </div>
+        <div id="courses">
+            <div class="article">
+                <br><a href="" title="record">Medical record review<br></a><br>
+            </div>
+        </div>
+    </aside>
+{% endblock %}
