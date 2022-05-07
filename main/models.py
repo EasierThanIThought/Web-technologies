@@ -44,14 +44,14 @@ class Doctor(models.Model):
 
 
 
-class Patient(models.Model):
+class Patient(User):
     #id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=255, verbose_name=u"name")
-    surname = models.CharField(max_length=255, verbose_name=u"surname")
-    passport = models.CharField(max_length=255, verbose_name=u"passport")
+    name = models.CharField(max_length=255, verbose_name=u"name", blank=True)
+    surname = models.CharField(max_length=255, verbose_name=u"surname", blank=True)
+    passport = models.CharField(max_length=255, verbose_name=u"passport",blank=True, unique=True)
     phone_number = models.CharField(max_length=255, verbose_name=u"mobile", null=True, blank=True)
-    birth = models.DateField(max_length=255, verbose_name=u"bithday")
-    user_id = models.OneToOneField(User, on_delete = models.CASCADE, primary_key = True)
+    birth = models.DateField(max_length=255, verbose_name=u"bithday", blank=True, null=True)
+    #user_id = models.OneToOneField(User, on_delete = models.CASCADE, primary_key = True)
 
     def __str__(self):
         return self.name

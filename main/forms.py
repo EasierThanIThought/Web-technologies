@@ -41,12 +41,11 @@ class UserInfoForm(ModelForm):
     surname = forms.CharField(label='Surname', widget=forms.TextInput(attrs={'class': 'form-input'}))
     passport = forms.CharField(label='Passport', widget=forms.TextInput(attrs={'class': 'form-input'}))
     phone_number = forms.CharField(label='Phone number', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    birth = forms.DateField(label='Birth', widget=forms.DateInput(attrs={'class': 'form-input'}))
     #user_id=forms.CharField(initial=request.user)
 
     class Meta:
         model = Patient
-        fields = ('name', 'surname', 'passport', 'phone_number', 'birth')
+        fields = ['name', 'surname', 'passport', 'phone_number', 'birth']
 
 
 class RegisterUserForm(UserCreationForm):
@@ -56,7 +55,7 @@ class RegisterUserForm(UserCreationForm):
     password2 = forms.CharField(label='Repeat password', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
 
     class Meta:
-        model = User
+        model = Patient
         fields = ('username', 'email', 'password1', 'password2')
 
 class LoginUserForm(AuthenticationForm):

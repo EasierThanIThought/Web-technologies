@@ -203,8 +203,8 @@
         </div>
         <div class="article">
             <img src="static/profile.png" alt="LOGO" title="LOGO">
-            <span>NAME SURNAME {{ user.patient.name }}</span>
-            <span>ID/PESEL</span>
+            <span>NAME SURNAME {{ user.username }} {{ user.patient.surname }}</span>
+            <span>ID/PESEL {{user.id}}</span>
             <p>passport</p>
             <p>phone number</p>
             <p>mail</p>
@@ -228,7 +228,7 @@
 <aside>
     <div id="courses">
         <div class="article">
-            <br><a href="/userinfo" title="registration">Add info<br></a><br>
+            <br><a href="{%  url 'Userinfo' user.id %}" title="registration">Add info<br></a><br>
         </div>
     </div>
     <div id="courses">
