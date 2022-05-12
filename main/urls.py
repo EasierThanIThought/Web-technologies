@@ -15,6 +15,8 @@ urlpatterns = [
     path('<int:pk>', UserInfo.as_view(), name="Userinfo"),
     path('register', RegisterUser.as_view(), name="Register"),
 
+    path('mRecord', views.medical_record, name="MRecord"),
+
 
 
 ]

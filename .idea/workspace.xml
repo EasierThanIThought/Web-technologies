@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3268a632-f081-403b-8fae-9b3ddf16e948.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabSEVEN/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LabSEVEN/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/authorization.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/clinic.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/clinic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/personpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/personpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/styles.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/styles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/userinfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,28 +109,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21aORWfFBNfHcPIrU1pqMOQiNiA" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1 курс/лабы инфа/курсовая/сайт" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates/main" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\универ\3 курс\web20\main\templates\main" />
+      <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main\templates\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main\templates\main\css" />
       <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main" />
       <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main\static" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -178,7 +191,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -206,12 +218,9 @@
       <workItem from="1651138964584" duration="2687000" />
       <workItem from="1651144642999" duration="123000" />
       <workItem from="1651236543075" duration="925000" />
-      <workItem from="1651403742603" duration="7325000" />
-      <workItem from="1651477368157" duration="15845000" />
-      <workItem from="1651564944023" duration="316000" />
-      <workItem from="1651579664150" duration="5760000" />
-      <workItem from="1651653086944" duration="6752000" />
-      <workItem from="1651734660038" duration="8102000" />
+      <workItem from="1652255199837" duration="1173000" />
+      <workItem from="1652273328151" duration="1253000" />
+      <workItem from="1652342241486" duration="2356000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of basic pages">
       <created>1651073726838</created>
@@ -241,44 +250,29 @@
       <option name="project" value="LOCAL" />
       <updated>1651238309775</updated>
     </task>
-    <task id="LOCAL-00005" summary="try register">
-      <created>1651480704219</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1651480704219</updated>
-    </task>
-    <task id="LOCAL-00006" summary="try rforms">
-      <created>1651584368539</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1651584368539</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of basic pages" />
     <MESSAGE value="Creation of basic pages + starting registration" />
-    <MESSAGE value="try register" />
-    <MESSAGE value="try rforms" />
-    <option name="LAST_COMMIT_MESSAGE" value="try rforms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of basic pages + starting registration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabSEVEN$manage.coverage" NAME="manage Coverage Results" MODIFIED="1650887243355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

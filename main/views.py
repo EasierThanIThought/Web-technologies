@@ -134,3 +134,5 @@ def logout_user(request):
     return redirect("Authorization")
 
 
+def medical_record(request):
+    return render(request, "main/medical_record.html")
