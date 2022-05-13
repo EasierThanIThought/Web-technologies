@@ -48,6 +48,14 @@ class UserInfoForm(ModelForm):
         fields = ['name', 'surname', 'passport', 'phone_number', 'birth']
 
 
+class AppointmentForm(ModelForm):
+
+    class Meta:
+        model = Appointment
+        fields = ['time', 'doctor_id']
+
+
+
 class RegisterUserForm(UserCreationForm):
     username = forms.CharField(label='login', widget=forms.TextInput(attrs={'class': 'form-input'}))
     email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form-input'}))

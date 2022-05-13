@@ -10,6 +10,7 @@ urlpatterns = [
     path('clinic', views.clinic, name="Clinic"),
     path('personpage', views.personpage, name="Personpage"),
    # path('<int:pk>', PatientDetail.as_view(), name="patient_detail" ),
+    path('appointment', AppointmentInfo.as_view(), name="Appointment"),
 
     path('<int:pk>', UserInfo.as_view(), name="Userinfo"),
     path('register', RegisterUser.as_view(), name="Register"),

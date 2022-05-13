@@ -4,61 +4,61 @@
 {% endblock %}
 
 {% block headcontent %}
-{% load static %}
-        <style>
+    {% load static %}
+    <style>
 
         /*Modify*/
         @media (min-width: 950px){
             header>div#logo>a>img {
-            margin-left: 15%;
+                margin-left: 15%;
             }
             #logo {
-            float: left;
-            width: 30%;
+                float: left;
+                width: 30%;
             }
             #about {
                 float: left;
                 width: 37%;
             }
             #reg_auth {
-            float: right;
-            width: 30%;
+                float: right;
+                width: 30%;
             }
         }
 
         @media (max-width: 949px) and (min-width: 525px) {
             header>div#logo>a>img {
-            margin-left: 15%;
+                margin-left: 15%;
             }
             #logo {
-            float: left;
-            width: 50%;
+                float: left;
+                width: 50%;
             }
             #about {
                 visibility: hidden;
                 display: none;
             }
             #reg_auth {
-            float: right;
-            width: 50%;
+                float: right;
+                width: 50%;
             }
         }
 
         @media (max-width: 524px) {
             header>div#logo>a>img {
-            margin-left: 5%;
+                margin-left: 5%;
             }
             #logo {
-            float: left;
-            width: 50%;
+                float: left;
+                width: 50%;
             }
             #about {
                 visibility: hidden;
                 display: none;
             }
             #reg_auth {
-            float: right;
-            width: 50%;
+                float: right;
+                width: 50%;
             }
         }
 
@@ -145,30 +145,25 @@
             text-align: center;
             color: black;
         }
-
-        table {
-            width: 98%;
-            margin: 1%;
-            border: 1px solid #178FFF;
-            font-size: 1em;
+        input {
+            font-size: 1.2em;
+            line-height: 1.2em;
+            border: 2px solid silver;
+            border-radius: 5px;
         }
-        /* границы ячеек первого ряда таблицы */
-        th {
-            background-color: #0C0D3D;
-            color: white;
-            border: 1px solid grey;
-            width: 10px;
-            height: 30px;
+        .form-label {
+            max-width: 95%;
+            padding-left: 30px;
+            padding-right: 30px;
         }
-        /* границы ячеек тела таблицы */
-        td {
-            color: #0C0D3D;
-            border: 1px solid grey;
-            text-align: center;
+        .form-field {
+            margin: 7px 10%;
         }
-
-        .button{
-
+        button[type=submit] {
+            float: right;
+            margin-right: 20%;
+            margin-top: 7px;
+            border-radius: 5px;
             padding: 5px 9px;
             font-size: 1.2em;
             background-color: #178FFF;
@@ -177,25 +172,26 @@
             overflow: hidden;
 
         }
-        .button:hover {
+        button[type=submit]:hover {
             background-color: white;
             color: #178FFF;
             text-decoration: none;
             text-shadow: none;
             cursor: pointer;
         }
-        .button:active {
+        button[type=submit]:active {
             background-color: #178FFF;
             color: white;
             text-decoration: none;
             text-shadow: none;
             cursor: wait;
         }
-
+        }
 
     </style>
 
     <div id="reg_auth">
+
         <a href="/personpage" title="Cancel">
             <div class="btn">
                 Cancel
@@ -205,66 +201,26 @@
 {% endblock %}
 
 {% block content %}
-{% load static %}
-<div id="main">
-    <div id="news">
-        <h2 class="heading">Doctor</h2>
-        <div style="clear:both">
-            <br>
-        </div>
-        <div class="article">
-            <img src="static/logo.png" alt="LOGO" title="LOGO">
+    {% load static %}
+    <div id="main">
+        <div id="news">
+            <h2 class="heading">Appointment</h2>
+            <div style="clear:both">
+                <br>
+            </div>
+            <div class="article">
+                <form method="post">
+                    {% csrf_token %}
+
+                    {% for f in form %}
+                        <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+                        <div class="form-error">{{ f.errors }}</div>
+                    {% endfor %}
 
 
-                    <table class="table table-striped "style="background-color: #e3f2fd;opacity: 0.9;">
-                       <col width="10%">
-                        <col width="10%">
-                    <col width="30%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th>Doctor</th>
-                            <th> room</th>
-                            <th> profession</th>
-                            <th> mon</th>
-                            <th> tue</th>
-                            <th> wed</th>
-                            <th> thu</th>
-                            <th> fri </th>
-                        </tr>
-
-                        {% for serv in object_list %}
-
-
-                            <tr>
-                                <td>
-
-                                    <form action="{{ serv.name }}m">
-                                        <a href="/appointment" title="Choose">
-                                            <div class="button">
-                                                {{ serv.name }}
-                                            </div>
-                                        </a>
-                                    </form>
-                                </td>
-                                <td>{{ serv.room }}</td>
-                                <td>{{ serv.profession_id.name }}</td>
-                                <td >{{ serv.mon }}</td>
-                                <td >{{ serv.tue }}</td>
-                                <td >{{ serv.wed }}</td>
-                                <td>{{ serv.thu }}</td>
-                                <td >{{ serv.fri }}</td>
-                            </tr>
-
-                        {% endfor %}
-                    </table>
-
-
+                    <button type="submit">Save</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}
