@@ -61,6 +61,7 @@ class UserInfo(UpdateView):
     success_url = reverse_lazy("Personpage")
 
 
+
 class AppointmentInfo(CreateView):
     model=Appointment
     form_class = AppointmentForm

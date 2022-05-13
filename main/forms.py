@@ -48,6 +48,7 @@ class UserInfoForm(ModelForm):
         fields = ['name', 'surname', 'passport', 'phone_number', 'birth']
 
 
+
 class AppointmentForm(ModelForm):
 
     class Meta:
