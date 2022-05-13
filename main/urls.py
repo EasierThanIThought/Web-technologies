@@ -5,7 +5,6 @@ urlpatterns = [
     path('', views.clinic, name="Homepage"),
     path('about', views.about, name="About"),
     path('message', views.message, name="Feedback"),
-    path('registration', views.registration, name="Registration"),
     path('authorization', LoginUser.as_view(), name="Authorization"),
     path('logout/', logout_user, name='logout'),
     path('clinic', views.clinic, name="Clinic"),

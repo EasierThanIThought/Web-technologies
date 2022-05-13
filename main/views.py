@@ -37,10 +37,6 @@ def message(request):
     return render(request, "main/message.html", context)
 
 
-def registration(request):
-    return render(request, "main/registration.html")
-
-
 # def authorization(request):
 #     return render(request, "main/authorization.html")
 
