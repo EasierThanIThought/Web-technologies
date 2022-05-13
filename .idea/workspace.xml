@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="do registration and personal info5">
+    <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/doctor_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/doctor_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651238309775</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="doctor info start">
+      <created>1652432768280</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652432768280</updated>
+    </task>
+    <task id="LOCAL-00006" summary="doctor info start">
+      <created>1652432788816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652432788816</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +266,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of basic pages" />
     <MESSAGE value="Creation of basic pages + starting registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of basic pages + starting registration" />
+    <MESSAGE value="doctor info start" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctor info start" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabSEVEN$manage.coverage" NAME="manage Coverage Results" MODIFIED="1650887243355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

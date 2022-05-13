@@ -25,6 +25,7 @@ class ServiceListView(ListView):
     queryset = Doctor.objects.all().order_by('name')
 
 
+
 def message(request):
     error = ''
     if request.method == "POST":

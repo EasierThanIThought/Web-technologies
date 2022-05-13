@@ -9,7 +9,7 @@ admin.site.register(MedicalCard)
 admin.site.register(Patient)
 admin.site.register(Appointment)
 admin.site.register(Vacation)
-admin.site.register(Schedule)
+
 
 
 

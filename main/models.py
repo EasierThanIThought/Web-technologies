@@ -37,6 +37,13 @@ class Doctor(models.Model):
     room = models.IntegerField(verbose_name=u"room")
     profession_id = models.ForeignKey(Profession, on_delete=models.CASCADE)
     hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
+    mon = models.CharField(max_length=255)
+    tue = models.CharField(max_length=255)
+    wed = models.CharField(max_length=255)
+    thu = models.CharField(max_length=255)
+    fri = models.CharField(max_length=255)
+    sat = models.CharField(max_length=255)
+    sun = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
@@ -92,17 +99,4 @@ class Vacation(models.Model):
         return self.id
 
 
-class Schedule(models.Model):
-   # id = models.AutoField(primary_key=True)
-    doctor_id = models.ForeignKey(Doctor, on_delete=models.CASCADE, primary_key=True)
-    mon = models.CharField(max_length=255)
-    tue = models.CharField(max_length=255)
-    wed = models.CharField(max_length=255)
-    thu = models.CharField(max_length=255)
-    fri = models.CharField(max_length=255)
-    sat = models.CharField(max_length=255)
-    sun = models.CharField(max_length=255)
-
-    def __int__(self):
-        return self.id
 
