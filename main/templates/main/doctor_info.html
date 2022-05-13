@@ -150,19 +150,47 @@
             width: 98%;
             margin: 1%;
             border: 1px solid #178FFF;
+            font-size: 1em;
         }
         /* границы ячеек первого ряда таблицы */
         th {
+            background-color: #0C0D3D;
+            color: white;
             border: 1px solid grey;
             width: 10px;
             height: 30px;
         }
         /* границы ячеек тела таблицы */
         td {
+            color: #0C0D3D;
             border: 1px solid grey;
             text-align: center;
         }
 
+        .button{
+
+            padding: 5px 9px;
+            font-size: 1.2em;
+            background-color: #178FFF;
+            text-shadow: #0C0D3D 0 0 2px;
+            color:white;
+            overflow: hidden;
+
+        }
+        .button:hover {
+            background-color: white;
+            color: #178FFF;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: pointer;
+        }
+        .button:active {
+            background-color: #178FFF;
+            color: white;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: wait;
+        }
 
 
     </style>
@@ -217,7 +245,7 @@
 
                                     <form action="{{ serv.name }}m">
                                         <a href="/personpage" title="Choose">
-                                            <div class="btn">
+                                            <div class="button">
                                                 {{ serv.name }}
                                             </div>
                                         </a>

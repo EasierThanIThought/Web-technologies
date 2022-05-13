@@ -12,6 +12,7 @@ from .forms import *
 from .models import *
 #from .utils import *
 
+
 def index(request):
     return render(request, "main/index.html")
 
@@ -23,8 +24,6 @@ class ServiceListView(ListView):
     model = Doctor
     template_name = 'main/doctor_info.html'
     queryset = Doctor.objects.all().order_by('name')
-
-
 
 def message(request):
     error = ''
@@ -61,6 +60,7 @@ class UserInfo(UpdateView):
     template_name = 'main/userinfo.html'
     success_url = reverse_lazy("Personpage")
 
+
 class PatientDetail(DetailView):
     model=Patient
     template_name='main/details_view.html'
@@ -85,6 +85,7 @@ class RegisterUser(CreateView):
         user = form.save()
         login(self.request, user)
         return redirect("Homepage")
+
 
 class LoginUser(LoginView):
     form_class = LoginUserForm

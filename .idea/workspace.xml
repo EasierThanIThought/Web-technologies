@@ -4,6 +4,8 @@
     <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/doctor_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/doctor_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/personpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/personpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/userinfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651238309775</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="doctor table">
+      <created>1652436347327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652436347327</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +302,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of basic pages" />
     <MESSAGE value="Creation of basic pages + starting registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of basic pages + starting registration" />
+    <MESSAGE value="doctor table" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctor table" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabSEVEN$manage.coverage" NAME="manage Coverage Results" MODIFIED="1650887243355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -203,6 +203,16 @@
         </div>
         <div class="article">
             <img src="static/profile.png" alt="LOGO" title="LOGO">
+            {% if request.user.is_authenticated %}
+                <span>{{ user.username }}</span>
+                <span>{{ user.patient.name }} {{ user.patient.surname }}</span>
+
+            <p>passport:<br>{{ user.patient.passport }}</p>
+            <p>phone number:<br>{{ user.patient.phone_number }}</p>
+            <p>mail:<br>{{ user.email }}</p>
+            <br>
+            <a href="" title="edit">Edit</a>
+            {% else %}
             <span>NAME SURNAME {{ user.username }} {{ user.patient.surname }}</span>
             <span>ID/PESEL {{user.id}}</span>
             <p>passport</p>
@@ -210,6 +220,7 @@
             <p>mail</p>
             <br>
             <a href="" title="edit">Edit</a>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -234,6 +245,12 @@
     <div id="courses">
         <div class="article">
             <br><a href="/mRecord" title="record">Medical record review<br></a><br>
+        </div>
+    </div>
+
+    <div id="courses">
+        <div class="article">
+            <br><a href="/doctor_info" title="appointment">Make an appointment<br></a><br>
         </div>
     </div>
 </aside>
