@@ -1,0 +1,152 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"32a400f6-2709-41f0-aa5a-97d864783c75\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/3268a632-f081-403b-8fae-9b3ddf16e948.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/forms.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/forms.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/main/authorization.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/main/authorization.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/main/clinic.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/main/clinic.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/main/personpage.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/main/personpage.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/main/register.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/main/register.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/main/styles.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/main/styles.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/templates/main/userinfo.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/templates/main/userinfo.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main/views.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DatabaseView\">\r\n    <option name=\"SHOW_INTERMEDIATE\" value=\"true\" />\r\n    <option name=\"GROUP_DATA_SOURCES\" value=\"true\" />\r\n    <option name=\"GROUP_SCHEMA\" value=\"true\" />\r\n    <option name=\"GROUP_CONTENTS\" value=\"false\" />\r\n    <option name=\"SORT_POSITIONED\" value=\"false\" />\r\n    <option name=\"SHOW_EMPTY_GROUPS\" value=\"false\" />\r\n    <option name=\"AUTO_SCROLL_FROM_SOURCE\" value=\"false\" />\r\n    <option name=\"HIDDEN_KINDS\">\r\n      <set />\r\n    </option>\r\n    <expand>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"d52ttcodhfonmv@ec2-34-242-84-130.eu-west-1.compute.amazonaws.com\" type=\"feb32156:DbDataSourceImpl\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"d52ttcodhfonmv: database\" type=\"162271b6:PgImplModel$Database\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"d52ttcodhfonmv: database\" type=\"162271b6:PgImplModel$Database\" />\r\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"d52ttcodhfonmv: database\" type=\"162271b6:PgImplModel$Database\" />\r\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"public: schema\" type=\"983ebcf7:PgImplModel$Schema\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"d52ttcodhfonmv: database\" type=\"162271b6:PgImplModel$Database\" />\r\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"public: schema\" type=\"983ebcf7:PgImplModel$Schema\" />\r\n        <item name=\"tables\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"databases\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"d52ttcodhfonmv: database\" type=\"162271b6:PgImplModel$Database\" />\r\n        <item name=\"schemas\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"public: schema\" type=\"983ebcf7:PgImplModel$Schema\" />\r\n        <item name=\"tables\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n        <item name=\"main_user: table\" type=\"69fad909:PgImplModel$LocalTable\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"Database\" type=\"3277223f:DatabaseStructure$DbRootGroup\" />\r\n        <item name=\"Django Hospital\" type=\"feb32156:DbDataSourceImpl\" />\r\n        <item name=\"roles\" type=\"d4e8921:DatabaseStructure$FamilyGroup\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"DjangoConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\">\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21aORWfFBNfHcPIrU1pqMOQiNiA\" />\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DatabaseDriversLRU\" value=\"postgresql\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/main/templates/main\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\79221\\Desktop\\web-prog\\LabSEVEN\\main\\templates\\main\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\79221\\Desktop\\web-prog\\LabSEVEN\\main\\templates\\main\\css\" />\r\n      <recent name=\"C:\\Users\\79221\\Desktop\\web-prog\\LabSEVEN\\main\" />\r\n      <recent name=\"C:\\Users\\79221\\Desktop\\web-prog\\LabSEVEN\\main\\static\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"ruleStates\">\r\n      <list>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\r\n        </RuleState>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\r\n        </RuleState>\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.manage\">\r\n    <configuration name=\"manage\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\r\n      <module name=\"LabSEVEN\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/manage.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"LabSEVEN\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\r\n      <module name=\"LabSEVEN\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <option name=\"port\" value=\"8000\" />\r\n      <option name=\"host\" value=\"\" />\r\n      <option name=\"additionalOptions\" value=\"\" />\r\n      <option name=\"browserUrl\" value=\"\" />\r\n      <option name=\"runTestServer\" value=\"false\" />\r\n      <option name=\"runNoReload\" value=\"false\" />\r\n      <option name=\"useCustomRunCommand\" value=\"false\" />\r\n      <option name=\"customRunCommand\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.manage\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"32a400f6-2709-41f0-aa5a-97d864783c75\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1638175723315</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638175723315</updated>\r\n      <workItem from=\"1638175808961\" duration=\"629000\" />\r\n      <workItem from=\"1639311592253\" duration=\"23141000\" />\r\n      <workItem from=\"1639335735607\" duration=\"35000\" />\r\n      <workItem from=\"1639379204029\" duration=\"1726000\" />\r\n      <workItem from=\"1650293465767\" duration=\"561000\" />\r\n      <workItem from=\"1650533770446\" duration=\"3157000\" />\r\n      <workItem from=\"1650539659098\" duration=\"343000\" />\r\n      <workItem from=\"1650540056575\" duration=\"455000\" />\r\n      <workItem from=\"1650540567035\" duration=\"21270000\" />\r\n      <workItem from=\"1650875028192\" duration=\"16863000\" />\r\n      <workItem from=\"1650965641089\" duration=\"1732000\" />\r\n      <workItem from=\"1651050814804\" duration=\"3300000\" />\r\n      <workItem from=\"1651061192454\" duration=\"10886000\" />\r\n      <workItem from=\"1651125623159\" duration=\"9651000\" />\r\n      <workItem from=\"1651138964584\" duration=\"2687000\" />\r\n      <workItem from=\"1651144642999\" duration=\"123000\" />\r\n      <workItem from=\"1651236543075\" duration=\"925000\" />\r\n      <workItem from=\"1652255199837\" duration=\"1173000\" />\r\n      <workItem from=\"1652273328151\" duration=\"1253000\" />\r\n      <workItem from=\"1652342241486\" duration=\"2356000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Creation of basic pages\">\r\n      <created>1651073726838</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1651073726838</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Creation of basic pages + starting registration\">\r\n      <created>1651236587135</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1651236587135</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Creation of basic pages + starting registration\">\r\n      <created>1651236889018</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1651236889018</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Creation of basic pages + starting registration\">\r\n      <created>1651238309775</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1651238309775</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"1\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"COLUMN_ORDER\" />\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Creation of basic pages\" />\r\n    <MESSAGE value=\"Creation of basic pages + starting registration\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Creation of basic pages + starting registration\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/LabSEVEN$manage.coverage\" NAME=\"manage Coverage Results\" MODIFIED=\"1650887243355\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6ce5acd7f7856311bbf34c46f180e0956e5a2770)
++++ b/.idea/workspace.xml	(date 1652427670102)
+@@ -1,21 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3268a632-f081-403b-8fae-9b3ddf16e948.xml" beforeDir="false" />
++    <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="do registration and personal info5">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/main/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/authorization.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/main/clinic.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/clinic.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/main/personpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/personpage.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/main/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/register.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/main/styles.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/styles.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/templates/main/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/userinfo.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+     </list>
+-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -109,17 +97,22 @@
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="21aORWfFBNfHcPIrU1pqMOQiNiA" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
+   <component name="PropertiesComponent">
+     <property name="DatabaseDriversLRU" value="postgresql" />
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates/main" />
++    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1 курс/лабы инфа/курсовая/сайт" />
+     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main\templates\main" />
++      <recent name="C:\Users\Admin\Desktop\универ\3 курс\web20\main\templates\main" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main\templates\main\css" />
+@@ -127,18 +120,6 @@
+       <recent name="C:\Users\79221\Desktop\web-prog\LabSEVEN\main\static" />
+     </key>
+   </component>
+-  <component name="RunDashboard">
+-    <option name="ruleStates">
+-      <list>
+-        <RuleState>
+-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+-        </RuleState>
+-        <RuleState>
+-          <option name="name" value="StatusDashboardGroupingRule" />
+-        </RuleState>
+-      </list>
+-    </option>
+-  </component>
+   <component name="RunManager" selected="Python.manage">
+     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <module name="LabSEVEN" />
+@@ -191,6 +172,7 @@
+       </list>
+     </recent_temporary>
+   </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="SvnConfiguration">
+     <configuration />
+   </component>
+@@ -218,9 +200,12 @@
+       <workItem from="1651138964584" duration="2687000" />
+       <workItem from="1651144642999" duration="123000" />
+       <workItem from="1651236543075" duration="925000" />
+-      <workItem from="1652255199837" duration="1173000" />
+-      <workItem from="1652273328151" duration="1253000" />
+-      <workItem from="1652342241486" duration="2356000" />
++      <workItem from="1651403742603" duration="7325000" />
++      <workItem from="1651477368157" duration="15845000" />
++      <workItem from="1651564944023" duration="316000" />
++      <workItem from="1651579664150" duration="5760000" />
++      <workItem from="1651653086944" duration="6752000" />
++      <workItem from="1651734660038" duration="8102000" />
+     </task>
+     <task id="LOCAL-00001" summary="Creation of basic pages">
+       <created>1651073726838</created>
+@@ -250,29 +235,44 @@
+       <option name="project" value="LOCAL" />
+       <updated>1651238309775</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="try register">
++      <created>1651480704219</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1651480704219</updated>
++    </task>
++    <task id="LOCAL-00006" summary="try rforms">
++      <created>1651584368539</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1651584368539</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="1" />
++    <option name="version" value="3" />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State>
+-              <option name="COLUMN_ORDER" />
+-            </State>
++            <State />
+           </value>
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Creation of basic pages" />
+     <MESSAGE value="Creation of basic pages + starting registration" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Creation of basic pages + starting registration" />
++    <MESSAGE value="try register" />
++    <MESSAGE value="try rforms" />
++    <option name="LAST_COMMIT_MESSAGE" value="try rforms" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/LabSEVEN$manage.coverage" NAME="manage Coverage Results" MODIFIED="1650887243355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

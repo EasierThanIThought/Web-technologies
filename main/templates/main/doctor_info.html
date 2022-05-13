@@ -1,0 +1,195 @@
+{% extends 'main/styles.html' %}
+{% block title %}
+    Clinic
+{% endblock %}
+
+{% block headcontent %}
+{% load static %}
+        <style>
+
+        /*Modify*/
+        @media (min-width: 950px){
+            header>div#logo>a>img {
+            margin-left: 15%;
+            }
+            #logo {
+            float: left;
+            width: 30%;
+            }
+            #about {
+                float: left;
+                width: 37%;
+            }
+            #reg_auth {
+            float: right;
+            width: 30%;
+            }
+        }
+
+        @media (max-width: 949px) and (min-width: 525px) {
+            header>div#logo>a>img {
+            margin-left: 15%;
+            }
+            #logo {
+            float: left;
+            width: 50%;
+            }
+            #about {
+                visibility: hidden;
+                display: none;
+            }
+            #reg_auth {
+            float: right;
+            width: 50%;
+            }
+        }
+
+        @media (max-width: 524px) {
+            header>div#logo>a>img {
+            margin-left: 5%;
+            }
+            #logo {
+            float: left;
+            width: 50%;
+            }
+            #about {
+                visibility: hidden;
+                display: none;
+            }
+            #reg_auth {
+            float: right;
+            width: 50%;
+            }
+        }
+
+        /*добавление элементов по центру шапки*/
+        #about {
+            text-align: center;
+            font-size: 1.4em;
+            padding-top: 10px;
+        }
+        #about>a {
+            color: white;
+        }
+        #about>a:hover {
+            color: white;
+            border-bottom: 1px solid silver;
+        }
+        #about>a:last-child {
+            margin-left: 10%;
+        }
+        #reg_auth>a {
+            color: white;
+        }
+        .btn {
+            float: right;
+            margin-right: 3%;
+            margin-top: 7px;
+            border-radius: 5px;
+            padding: 5px 9px;
+            font-size: 1.2em;
+            background-color: #178FFF;
+            text-shadow: #0C0D3D 0 0 2px;
+            color:white;
+        }
+        .btn:hover {
+            margin-top: 9px;
+        }
+        .btn:active {
+            border-bottom: 0;
+            margin-top: 11px;
+        }
+
+        /*Стиль основного контента*/
+        #main {
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            margin-left: 5%;
+        }
+        .heading {
+            cursor: default;
+            font-weight: lighter;
+            font-size: 1.4em;
+            border-bottom: 2px solid #178FFF;
+            float: left;
+            color: #0C0D3D;
+            padding: 0px 5px;
+        }
+        .heading:first-letter {
+            color: #178FFF;
+        }
+
+        .article {
+            float: left;
+            margin-right: 10%;
+            margin-bottom: 20px;
+            border: 2px solid #178FFF;
+            background-color: white;
+            box-sizing: border-box;
+            max-width: 95%;
+            border-radius: 5px;
+        }
+        .article>img {
+            border-radius: 5px 5px 0 0;
+            width: 20%;
+            height: 20%;
+            display: block;
+            margin: 0 auto;
+        }
+        .article>span {
+            font-size: 1.3em;
+            width: 80%;
+            margin: 7px 10%;
+            float: left;
+            text-align: center;
+            color: black;
+        }
+
+    </style>
+
+    <div id="reg_auth">
+        <a href="/personpage" title="Cancel">
+            <div class="btn">
+                Cancel
+            </div>
+        </a>
+    </div>
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div id="main">
+    <div id="news">
+        <h2 class="heading">Doctor</h2>
+        <div style="clear:both">
+            <br>
+        </div>
+        <div class="article">
+            <img src="static/logo.png" alt="LOGO" title="LOGO">
+
+            </span>
+            <span>
+                    <table class="table table-striped "style="background-color: #e3f2fd;opacity: 0.9;">
+                        <thead class="thead-dark">
+                        <tr><th>Doctor</th><th>   room</th><th> profession</th><th> mon</th><th> tue</th><th> web</th><th> thu</th><th> fri</th></tr>
+
+                        {% for serv in object_list %}
+
+                            <tr><td><form action="{{ serv.name }}m"> <button  href="/personpage">{{ serv.name }}</button></form>
+
+
+                            </td><td>    {{ serv.room }}   </td><td> {{ serv.profession_id.name }}  </td>
+                                </td><td>    {{ serv.id.mon }}   </td></td><td>    {{ serv.id.mon }}   </td></td><td>    {{ serv.id.mon }}   </td></td><td>    {{ serv.id.mon }}   </td></td>
+                                <td>    {{ serv.id.mon }}   </td></td><td>    {{ serv.id.mon}}   </td>
+                            </tr>
+
+
+                        {% endfor %}
+                    </table>
+                </span>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
