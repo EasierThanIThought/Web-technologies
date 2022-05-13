@@ -19,6 +19,11 @@ def index(request):
 def about(request):
     return render(request, "main/about.html")
 
+class ServiceListView(ListView):
+    model = Doctor
+    template_name = 'main/doctor_info.html'
+    queryset = Doctor.objects.all().order_by('name')
+
 
 def message(request):
     error = ''
@@ -37,10 +42,6 @@ def message(request):
     return render(request, "main/message.html", context)
 
 
-# def authorization(request):
-#     return render(request, "main/authorization.html")
-
-
 def personpage(request):
     return render(request, "main/personpage.html")
 
@@ -53,36 +54,12 @@ def home(request):
     return render(request, "main/home.html")
 
 
-# def register(request):
-#     error = ''
-#     if request.method == "POST":
-#         form = RegisterForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('Clinic')
-#         else:
-#             error = 'Форма заполнена неверно'
-#     form = FeedBackForm()
-#     context = {
-#         'form': form,
-#         'error': error
-#     }
-#     return render(request, "main/register.html", context)
-
 class UserInfo(UpdateView):
     model=Patient
     form_class = UserInfoForm
     template_name = 'main/userinfo.html'
     success_url = reverse_lazy("Personpage")
-    #
-    # def get_user_context(self, **kwargs):
-    #     context = kwargs
-    #     return context
-    #
-    # def get_context_data(self, *, object_list=None, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     c_def = self.get_user_context(title="Save")
-    #     return dict(list(context.items()) + list(c_def.items()))
+
 class PatientDetail(DetailView):
     model=Patient
     template_name='main/details_view.html'

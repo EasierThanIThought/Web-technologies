@@ -13,6 +13,7 @@ urlpatterns = [
 
     path('<int:pk>', UserInfo.as_view(), name="Userinfo"),
     path('register', RegisterUser.as_view(), name="Register"),
+    path('doctor_info', ServiceListView.as_view(), name="Doctor"),
 
     path('mRecord', views.medical_record, name="MRecord"),
 

@@ -94,7 +94,7 @@ class Vacation(models.Model):
 
 class Schedule(models.Model):
    # id = models.AutoField(primary_key=True)
-    doctor_id = models.ForeignKey(Doctor, on_delete=models.CASCADE)
+    doctor_id = models.ForeignKey(Doctor, on_delete=models.CASCADE, primary_key=True)
     mon = models.CharField(max_length=255)
     tue = models.CharField(max_length=255)
     wed = models.CharField(max_length=255)
