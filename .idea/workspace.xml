@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="32a400f6-2709-41f0-aa5a-97d864783c75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/doctor_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/doctor_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/personpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/personpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/userinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabSEVEN/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LabSEVEN/settings.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,16 +65,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django Hospital" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="d52ttcodhfonmv: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="auth_user: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -244,6 +233,9 @@
       <workItem from="1652255199837" duration="1173000" />
       <workItem from="1652273328151" duration="1253000" />
       <workItem from="1652342241486" duration="2356000" />
+      <workItem from="1652441168615" duration="320000" />
+      <workItem from="1652441515632" duration="1166000" />
+      <workItem from="1652456529653" duration="288000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of basic pages">
       <created>1651073726838</created>
@@ -280,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652436347327</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="doctor table version2">
+      <created>1652437642820</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652437642820</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +302,8 @@
     <MESSAGE value="Creation of basic pages" />
     <MESSAGE value="Creation of basic pages + starting registration" />
     <MESSAGE value="doctor table" />
-    <option name="LAST_COMMIT_MESSAGE" value="doctor table" />
+    <MESSAGE value="doctor table version2" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctor table version2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabSEVEN$manage.coverage" NAME="manage Coverage Results" MODIFIED="1650887243355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
