@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'LabSEVEN.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd787nrsfhgf284',
-        'USER': 'gwwjmjtxrdanlc',
-        'PASSWORD': '254c42a397f31afe9801100ef284276ec2bb18a4467919f75f30dcc49ccb5bd7',
-        'HOST': 'ec2-52-48-159-67.eu-west-1.compute.amazonaws.com',
+        'NAME': 'd8mocjb3ua9leg',
+        'USER': 'zjarrdllpwxval',
+        'PASSWORD': '3acb21128a1e88082989c21191eed413d745bae526fa7e2eea97e498d769a527',
+        'HOST': 'ec2-54-76-43-89.eu-west-1.compute.amazonaws.com',
         'PORT': '5432'
     }
 }
