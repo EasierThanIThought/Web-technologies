@@ -187,6 +187,63 @@
             cursor: wait;
         }
 
+                input {
+            font-size: 1.2em;
+            line-height: 1.2em;
+            border: 2px solid silver;
+            border-radius: 5px;
+        }
+        .form-label {
+            max-width: 95%;
+            min-width: 1000px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .form-field {
+            margin: 7px 10%;
+        }
+
+        .form__wrapper {
+            width: 460px;
+            margin: 20px auto;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        ul {
+    list-style-type: none;
+}
+
+                button[type=submit] {
+            float: right;
+            margin-right: 20%;
+            margin-top: 7px;
+            border-radius: 5px;
+            padding: 5px 9px;
+            font-size: 1.2em;
+            background-color: #178FFF;
+            text-shadow: #0C0D3D 0 0 2px;
+            color:white;
+            overflow: hidden;
+
+        }
+        button[type=submit]:hover {
+            background-color: white;
+            color: #178FFF;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: pointer;
+        }
+        button[type=submit]:active {
+            background-color: #178FFF;
+            color: white;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: wait;
+        }
+
+
+
     </style>
 
     <div id="reg_auth">
@@ -206,40 +263,32 @@
         <div style="clear:both">
             <br>
         </div>
+    <div class="article">
+    <img src="static/logo.png" alt="LOGO" title="LOGO">
+    <div class="form__wrapper">
         <form method="post">
+        <ul>
+        <li class="form__line">
             {% csrf_token %}
 
             {% for f in form %}
-                <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+                <p style="text-align:right; margin-right:50px;">
+                    <label class="form-label" for="{{ f.id_for_label }}">
+                        {{f.label}}:
+                    </label>
+                    {{ f }}
+                </p>
+                <br>
                 <div class="form-error">{{ f.errors }}</div>
             {% endfor %}
 
+        </li>
             <button type="submit">Register</button>
+        <br><br>
+        </ul>
         </form>
-{#        <div class="article">#}
-{#            <div class="register-form-container">#}
-{#                <div class="form-fields">#}
-{#                    <div class="form-field">#}
-{#                        <input type="text" placeholder="Name">#}
-{#                    </div>#}
-{#                    <div class="form-field">#}
-{#                        <input type="text" placeholder="Surname">#}
-{#                    </div>#}
-{#                    <div class="form-field">#}
-{#                        <input type="text" placeholder="Passport">#}
-{#                    </div>#}
-{#                    <div class="form-field">#}
-{#                        <input type="text" placeholder="Login">#}
-{#                    </div>#}
-{#                    <div class="form-field">#}
-{#                        <input type="text" placeholder="Repeat Login">#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="form-buttons">#}
-{#                    <button class="button">Register</button>#}
-{#                </div>#}
-{#            </div>#}
-
+    </div>
+</div>
         </div>
     </div>
 </div>

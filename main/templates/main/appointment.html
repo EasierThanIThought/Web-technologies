@@ -145,6 +145,7 @@
             text-align: center;
             color: black;
         }
+
         input {
             font-size: 1.2em;
             line-height: 1.2em;
@@ -153,12 +154,25 @@
         }
         .form-label {
             max-width: 95%;
+            min-width: 1000px;
             padding-left: 30px;
             padding-right: 30px;
         }
         .form-field {
             margin: 7px 10%;
         }
+
+        .form__wrapper {
+            width: 460px;
+            margin: 20px auto;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        ul {
+    list-style-type: none;
+}
+
         button[type=submit] {
             float: right;
             margin-right: 20%;
@@ -186,7 +200,6 @@
             text-shadow: none;
             cursor: wait;
         }
-        }
 
     </style>
 
@@ -209,17 +222,33 @@
                 <br>
             </div>
             <div class="article">
+        <img src="static/logo.png" alt="LOGO" title="LOGO">
+
+         <div class="form__wrapper">
                 <form method="post">
+                <ul>
+            <li class="form__line">
+
                     {% csrf_token %}
 
                     {% for f in form %}
-                        <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+                        <p  style="text-align:left; margin-right:50px;">
+                            <label class="form-label" for="{{ f.id_for_label }}">
+                                {{f.label}}:
+                            </label>
+                            {{ f }}
+                        </p>
+                        <br>
                         <div class="form-error">{{ f.errors }}</div>
                     {% endfor %}
+            </li>
 
 
-                    <button type="submit">Sav</button>
+                    <button type="submit">Save</button>
+                <br><br>
+            </ul>
                 </form>
+            </div>
             </div>
         </div>
     </div>

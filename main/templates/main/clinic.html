@@ -151,7 +151,7 @@
     <div id="reg_auth">
         {% if request.user.is_authenticated %}
 
-            <li class="last"> {{user.username}} | <a href="{% url 'logout' %}"><div class="btn">
+            <li class="last"> <a href="{% url 'logout' %}"><div class="btn">
                 Log out
             </div></a>
 
