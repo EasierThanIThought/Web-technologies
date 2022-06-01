@@ -234,8 +234,17 @@
         </div>
         <div class="article">
             <span>CURRENT</span>
-            <p>Doctor's first and last name</p>
-            <p>Date an time</p>
+            <br><a href="/appointment_info" title="appointment_info">Show all appointments<br></a><br>
+{#            <p>Doctor's first and last name</p>#}
+{##}
+{#            {% if user.id == appointments.patient_id %}#}
+{#            <p>{{ appointments.doctor_id }}</p>#}
+{#            {% else %}#}
+{#                <p>пока не вышло</p>#}
+{#            {% endif %}#}
+{#            <p>Date an time</p>#}
+
+
         </div>
     </div>
 </aside>

@@ -1,6 +1,6 @@
 {% extends 'main/styles.html' %}
 {% block title %}
-    Clinic
+    Appointment
 {% endblock %}
 
 {% block headcontent %}
@@ -227,7 +227,7 @@
          <div class="form__wrapper">
                 <form method="post">
                 <ul>
-            <li class="form__line">
+            <div class="form__line">
 
                     {% csrf_token %}
 
@@ -236,15 +236,27 @@
                             <label class="form-label" for="{{ f.id_for_label }}">
                                 {{f.label}}:
                             </label>
-                            {{ f }}
+                            {% if f.label == "pid" %}
+                                <p>хаха лошпек опять</p>
+                                {{ f }}
+                            {% else %}
+                                {{ f }}
+                            {% endif %}
+
+
                         </p>
                         <br>
-                        <div class="form-error">{{ f.errors }}</div>
+                     <div class="form-error">{{ f.errors }}</div>
                     {% endfor %}
             </li>
 
 
-                    <button type="submit">Save</button>
+                   <button type="submit">Save</button>
+ {#                       <a href="/appointment_info" title="Cancel">#}
+  {#                          <div class="btn">#}
+   {#                             Save#}
+    {#                        </div>#}
+     {#                   </a>#}
                 <br><br>
             </ul>
                 </form>

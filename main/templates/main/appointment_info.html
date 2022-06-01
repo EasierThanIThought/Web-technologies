@@ -1,6 +1,6 @@
 {% extends 'main/styles.html' %}
 {% block title %}
-    Doctor Info
+    Clinic
 {% endblock %}
 
 {% block headcontent %}
@@ -216,50 +216,37 @@
             <img src="static/logo.png" alt="LOGO" title="LOGO">
 
 
+
+
+
+
                     <table class="table table-striped "style="background-color: #e3f2fd;opacity: 0.9;">
-                       <col width="10%">
-                        <col width="10%">
-                    <col width="30%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
-                    <col width="10%">
+                       <col width="50%">
+                        <col width="50%">
                         <thead class="thead-dark">
                         <tr>
-                            <th>Doctor</th>
-                            <th> room</th>
-                            <th> profession</th>
-                            <th> mon</th>
-                            <th> tue</th>
-                            <th> wed</th>
-                            <th> thu</th>
-                            <th> fri </th>
+                            <th> Doctor</th>
+                            <th> Time</th>
                         </tr>
 
+
                         {% for serv in object_list %}
-
-
+                            {% if user.id == serv.patient_id_id %}
                             <tr>
                                 <td>
 
-                                    <form action="{{ serv.name }}m">
+                                    <form action="{{ serv.doctor_id }}m">
                                         <a href="/appointment" title="Choose">
                                             <div class="button">
-                                                {{ serv.name }}
+                                                {{ serv.doctor_id }}
                                             </div>
                                         </a>
                                     </form>
                                 </td>
-                                <td>{{ serv.room }}</td>
-                                <td>{{ serv.profession_id.name }}</td>
-                                <td >{{ serv.mon }}</td>
-                                <td >{{ serv.tue }}</td>
-                                <td >{{ serv.wed }}</td>
-                                <td>{{ serv.thu }}</td>
-                                <td >{{ serv.fri }}</td>
+                                <td>{{ serv.time }}</td>
                             </tr>
-
+                            {% else %}
+                             {% endif %}
                         {% endfor %}
                     </table>
 

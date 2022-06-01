@@ -2,16 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-# class User(models.Model):
-#     #id = models.AutoField(primary_key=True)
-#     login = models.CharField(max_length=255, verbose_name=u"login")
-#     password = models.CharField(max_length=255, verbose_name=u"password")
-#     is_staff = models.BooleanField(default=0)
-#
-#     def __str__(self):
-#         return self.login
-
-
 class Hospital(models.Model):
     #id = models.AutoField(primary_key=True)
     address = models.CharField(max_length=255, verbose_name=u"address")
@@ -49,8 +39,6 @@ class Doctor(models.Model):
         return self.name
 
 
-
-
 class Patient(User):
     #id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, verbose_name=u"name", blank=True)
@@ -67,7 +55,6 @@ class Patient(User):
     #     return self.name
 
 
-
 class MedicalCard(models.Model):
     #id = models.AutoField(primary_key=True)
     app_date = models.DateTimeField(max_length=255, verbose_name=u"date")
@@ -78,6 +65,7 @@ class MedicalCard(models.Model):
 
     def __str__(self):
         return self.diagnosis
+
 
 class Appointment(models.Model):
     #id = models.AutoField(primary_key=True)

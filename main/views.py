@@ -7,43 +7,40 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.admin.widgets import AdminDateWidget, AdminTimeWidget, AdminSplitDateTime
 
 from .forms import *
 from .models import *
-#from .utils import *
 
 
-def index(request):
-    return render(request, "main/index.html")
+# from .utils import *
 
-
-def about(request):
-    return render(request, "main/about.html")
 
 class ServiceListView(ListView):
     model = Doctor
     template_name = 'main/doctor_info.html'
     queryset = Doctor.objects.all().order_by('name')
 
-def message(request):
-    error = ''
-    if request.method == "POST":
-        form = FeedBackForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('Homepage')
-        else:
-            error = 'Форма заполнена неверно'
-    form = FeedBackForm()
-    context = {
-        'form': form,
-        'error': error
-    }
-    return render(request, "main/message.html", context)
+
+class AppointmentListView(ListView):
+    model = Appointment
+    template_name = 'main/appointment_info.html'
+    queryset = Appointment.objects.all().order_by('patient_id')
+
+
+class MRecordsListView(ListView):
+    model = MedicalCard
+    template_name = 'main/medical_record.html'
+    queryset = MedicalCard.objects.all().order_by('patient')
 
 
 def personpage(request):
-    return render(request, "main/personpage.html")
+    appointments = Appointment.objects.all()
+
+    context = {
+        'appointments': appointments,
+    }
+    return render(request, "main/personpage.html", context=context)
 
 
 def clinic(request):
@@ -55,23 +52,23 @@ def home(request):
 
 
 class UserInfo(UpdateView):
-    model=Patient
+    model = Patient
     form_class = UserInfoForm
     template_name = 'main/userinfo.html'
     success_url = reverse_lazy("Personpage")
 
 
-
 class AppointmentInfo(CreateView):
-    model=Appointment
+    model = Appointment
     form_class = AppointmentForm
     template_name = 'main/appointment.html'
-    success_url = reverse_lazy("Personpage")
+    success_url = reverse_lazy("Appointment_Info")
+
 
 class PatientDetail(DetailView):
-    model=Patient
-    template_name='main/details_view.html'
-    context_object_name='patient'
+    model = Patient
+    template_name = 'main/details_view.html'
+    context_object_name = 'patient'
 
 
 class RegisterUser(CreateView):

@@ -1,6 +1,6 @@
 {% extends 'main/styles.html' %}
 {% block title %}
-    Clinic
+    MRecord
 {% endblock %}
 
 {% block headcontent %}
@@ -146,6 +146,53 @@
             color: black;
         }
 
+        table {
+            width: 98%;
+            margin: 1%;
+            border: 1px solid #178FFF;
+            font-size: 1em;
+        }
+        /* границы ячеек первого ряда таблицы */
+        th {
+            background-color: #0C0D3D;
+            color: white;
+            border: 1px solid grey;
+            width: 10px;
+            height: 30px;
+        }
+        /* границы ячеек тела таблицы */
+        td {
+            color: #0C0D3D;
+            border: 1px solid grey;
+            text-align: center;
+        }
+
+        .button{
+
+            padding: 5px 9px;
+            font-size: 1.2em;
+            background-color: #178FFF;
+            text-shadow: #0C0D3D 0 0 2px;
+            color:white;
+            overflow: hidden;
+
+        }
+        .button:hover {
+            background-color: white;
+            color: #178FFF;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: pointer;
+        }
+        .button:active {
+            background-color: #178FFF;
+            color: white;
+            text-decoration: none;
+            text-shadow: none;
+            cursor: wait;
+        }
+
+
     </style>
 
     <div id="reg_auth">
@@ -161,17 +208,49 @@
 {% load static %}
 <div id="main">
     <div id="news">
-        <h2 class="heading">Medical history</h2>
+        <h2 class="heading">Doctor</h2>
         <div style="clear:both">
             <br>
         </div>
         <div class="article">
             <img src="static/logo.png" alt="LOGO" title="LOGO">
 
-            <span>сюда поставлю книжечку с болячками</span>
-            <span>понять бы только, как оно все должно выглядеть</span>
-            <span>так что сейчас это тупо шаблон</span>
-            <span>просто шаблон</span>
+
+                    <table class="table table-striped "style="background-color: #e3f2fd;opacity: 0.9;">
+                       <col width="20%">
+                        <col width="40%">
+                    <col width="40%">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Doctor</th>
+                            <th> diagnose</th>
+                            <th> date</th>
+                        </tr>
+
+                        {% for serv in object_list %}
+                            {% if user.id == serv.patient_id %}
+                            <tr>
+                                <td>
+
+                                    <form action="{{ serv.doctor_id.name }}m">
+                                        <a href="/appointment" title="Choose">
+                                            <div class="button">
+                                                {{ serv.doctor_id.name }}
+                                            </div>
+                                        </a>
+                                    </form>
+                                </td>
+                                <td>{{ serv.diagnosis }}</td>
+                                <td>{{ serv.app_date }}</td>
+                            </tr>
+
+                            {% else %}
+
+                            {% endif %}
+                        {% endfor %}
+                    </table>
+
+
         </div>
     </div>
 </div>
